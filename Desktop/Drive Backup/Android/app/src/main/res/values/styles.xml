@@ -7,9 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+    <style name="TextInputLayoutAppearance" parent="ThemeOverlay.AppCompat">
         <!-- reference our hint & error styles -->
-        <item name="hintTextAppearance">@color/colorPrimary</item>
+        <!--<item name="hintTextAppearance">@color/colorTextHint</item>-->
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textColorHint">@color/colorPrimary</item>
         <item name="colorControlNormal">@color/colorPrimary</item>
