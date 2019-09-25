@@ -23,11 +23,7 @@
                 android:background="@color/colorWhite"
                 android:text="Enter Patient's name"
                 android:textAllCaps="false"
-                android:textColor="@color/colorLightBlue"
-                android:drawableLeft="@drawable/search"
-                android:drawableTint="@color/colorPrimary"
-                android:paddingStart="100dp"
-                android:paddingEnd="100dp"/>
+                android:textColor="@color/colorLightBlue" />
         </RelativeLayout>
 
         <RelativeLayout
