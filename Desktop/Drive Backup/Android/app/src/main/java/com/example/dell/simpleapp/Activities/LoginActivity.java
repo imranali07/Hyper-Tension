@@ -42,9 +42,10 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phone = editTextPhone.getText().toString();
-                String pass = editTextPass.getText().toString();
-                userLogin(phone, pass);
+//                String phone = editTextPhone.getText().toString();
+//                String pass = editTextPass.getText().toString();
+                userLogin(editTextPhone.getText().toString(), editTextPass.getText().toString());//phone, pass
+
             }
         });
 
@@ -56,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
 //        params.add("", phone);
 //        params.add("", pass);
         URL = URL + phone + "/" + pass;
-        asyncHttpClient.get(this, URL, new AsyncHttpResponseHandler() {
+        asyncHttpClient.get(LoginActivity.this, URL, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 String respone = new String(responseBody);

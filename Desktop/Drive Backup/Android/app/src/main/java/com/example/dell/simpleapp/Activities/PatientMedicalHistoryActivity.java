@@ -17,7 +17,7 @@ public class PatientMedicalHistoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_medical_history);
-        diseaseList = new String[]{"Diabetes", "Heartattack in last 3 years", "Strokes", "Kidney disease"};
+        diseaseList = new String[]{"Diabetes", "Heart attack in last 3 years", "Strokes", "Kidney disease"};
         adapter = new PatientHistoryAdapter(diseaseList);
         recyclerView = findViewById(R.id.recycler_view_patient_history);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
